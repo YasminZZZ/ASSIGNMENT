@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #maincontent>img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+      #maincontent {
+        margin: 5%;
+      }
+      #pie {
+        justify-content: center;
+      }
+      #pie>img {
+        width: 40%;
+        float: left;
+        display: inline;
+      }
+      b {
+        color: #7e7e7e;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="sticky">
+
+          <span class="dropdown">
+            <button  class="dropbtn">MENU<img src="images/star.jpg" width="20px" id="star"></button>
+    
+    
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="assignment2.html"> Assignment02 &nbsp;→</a></li><br>
+                <li><a href="assignment3.html"> Assignment03 &nbsp;→</a></li><br>
+                <li><a href="assignment4.html"> Assignment04 &nbsp;→</a></li><br>
+                <li><a href="assignment5.html"> Assignment05 &nbsp;→</a></li>
+              </ul>
+            </div>
+            
+          </span>
+          <span id="zhong">ZHONG</span>
+          <span><a href="index.html" id="homepage">HOMEPAGE &nbsp;↩</a> </span>
+        </div> 
+<div id="maincontent">
+    <h4>This is a simple analysis of the Japanese restaurants in Central.</h4>
+    <p>I scrapped the data of Japanese restaurants in Central on openrice.com using ParseHub,and there are 278 resluts filtered by the website (see <a href="https://www.openrice.com/en/hongkong/restaurants?cuisineId=2009&districtId=1003"><u><b >link</b></u></a> here), while several not Japanese cuisine, so I just deleted those rows, then, cause I focus on comparing the reviews and the customer feedback of the restaurants, so I use facet by blank and delete those without reviews or feedback.
+    <p>At last, I got data of 218 restaurants.</p>
+      
+      <p>These 10 below are <u><b>bookmarked the most times</b></u>, implying gaining most interest from the customers. </p>
+      <img src="images/tb/topbookmarked.png">
+      <p>These 10 restaurants are probably the most popular which <b><u>have most reviews</u></b> from customers. </p>
+      <img src="images/tb/topreviews.png">
+      <p>I calculated the postive/negative rate using postive or negative to devide the sum of postive and negative, to show the rate of good/bad feedback, and these 10 hold <b><u>highest positive rate</u></b>. </p>
+      <img src="images/tb/topreviews.png">
+      <p>These 10 restaurants <b><u>have highest negative rate</u></b>.</p>
+      <img src="images/tb/topnegative.png">
+      <p>Below are <b><u>5 highest-postive-rate</u></b> restaurants with <b><u>high spending-per-head</u></b>(above $801), probably good choices for rich people :)</p>
+      <img src="images/tb/topratedspending.png">
+      <p>I also made some overall analysis based on spending category, the data shows that,restaurants spend the least and the most both have good rate from customers,60% and 48% separately, and the medium ones are less satisfied.</p>
+      <img src="images/tb/avgrate.png">
+      <p>Most of the Japanese restaurants in Central are relatively expensive, with more than half of them costing more than $200 per person,and 21% above $801. </p>
+      <div id="pie"><img src="images/tb/pietb.png"><img src="images/tb/pie.png"></div>
+    </div>
+
+</body>
+</html>
